@@ -6,7 +6,6 @@ import AddLocation from './components/AddLocation';
 import Locations from './components/Locations';
 import Footer from './components/Footer';
 import './styles/app.css';
-import Login from './components/Login/Login';
 import { Link } from 'react-router-dom';
 
 function HomeDashboard() {

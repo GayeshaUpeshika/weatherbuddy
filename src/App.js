@@ -11,7 +11,7 @@ import { auth } from "./firebase";
 import HomeDashboard from "./HomeDashboard";
 
 function App() {
-  const [userName, setUserName] = useState("");
+  const [, setUserName] = useState("");
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
