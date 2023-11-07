@@ -1,0 +1,54 @@
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+  cursor: auto;
+}
+
+.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-content-wrapper {
+  text-align: center;
+}
+
+.map button {
+  z-index: 999;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+
+  padding: 15px;
+  color: white;
+  background-color: #0059ff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.2s linear;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.map button:hover {
+  background-color: #0059ff;
+}
+
+/* RESPONSIVE */
+@media (min-width: 1000px) {
+  .map button {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .map {
+    position: relative;
+  }
+
+  .leaflet-control-zoom {
+    visibility: hidden;
+  }
+}

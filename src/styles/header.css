@@ -1,0 +1,101 @@
+.header-container {
+  margin: 20px;
+}
+
+.logo-name-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-name-container {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  color: #0059ff;
+  font-size: 50px;
+}
+
+.name {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+.button-add-location {
+  margin: 12px;
+  padding: 15px;
+  color: white;
+  background-color: #0059ff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background-color 0.2s linear;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  width: 143.63px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button-add-location:hover {
+  background-color: #0059ff;
+}
+
+.description {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.description span {
+  font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .logo {
+    font-size: 45px;
+  }
+
+  .name {
+    font-size: 35px;
+  }
+
+  .button-add-location {
+    padding: 12px;
+    font-size: 14px;
+    width: 112.38px;
+  }
+
+  .description {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 38px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .button-add-location {
+    padding: 10px;
+    font-size: 13px;
+    margin-right: 0;
+    width: 78.95px;
+    height: 56px;
+  }
+
+  .description {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,42 @@
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 500px;
+  max-width: 600px;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map {
+  flex-grow: 2.5;
+  flex-basis: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .app-container {
+    display: block;
+  }
+
+  .sidebar {
+    flex-grow: 0;
+    flex-basis: auto;
+    min-width: auto;
+    max-width: auto;
+    margin: 0 auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .map {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+}
